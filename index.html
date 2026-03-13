@@ -1,0 +1,589 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ML Prep Hub the path to Learning</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="#" onclick="router.loadPage('home')" class="logo">
+          <div class="logo-icon">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M12 2L2 7l10 5 10-5-10-5z" />
+              <path d="M2 17l10 5 10-5" />
+              <path d="M2 12l10 5 10-5" />
+            </svg>
+          </div>
+          <span>ML Prep Hub</span>
+        </a>
+
+        <div class="nav-links">
+          <!-- NEW FLOW ORDER -->
+          <a
+            href="#"
+            onclick="router.loadPage('home')"
+            class="nav-link active"
+            data-page="home"
+            >Home</a
+          >
+          <a
+            href="#"
+            onclick="router.loadPage('subjects')"
+            class="nav-link"
+            data-page="subjects"
+            >Learn (Videos)</a
+          >
+          <a
+            href="#"
+            onclick="router.loadPage('lab')"
+            class="nav-link highlight"
+            data-page="lab"
+            >Play (Games)</a
+          >
+          <a
+            href="#"
+            onclick="router.loadPage('recommended')"
+            class="nav-link"
+            data-page="recommended"
+            >Recommended</a
+          >
+          <a
+            href="#"
+            onclick="router.loadPage('projects')"
+            class="nav-link"
+            data-page="projects"
+            >Projects</a
+          >
+        </div>
+
+        <button class="hamburger" id="menuBtn">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#" onclick="router.loadPage('home')">Home</a>
+      <a href="#" onclick="router.loadPage('subjects')">Learn (Videos)</a>
+      <a href="#" onclick="router.loadPage('lab')">Play (Games)</a>
+      <a href="#" onclick="router.loadPage('recommended')">Recommended</a>
+      <a href="#" onclick="router.loadPage('projects')">Projects</a>
+    </div>
+
+    <!-- Main Content Container -->
+    <main id="app-container">
+      <!-- PAGE 1: LANDING PAGE (HOME) -->
+      <section id="page-home" class="page active">
+        <div class="hero">
+          <div class="hero-bg">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="grid-pattern"></div>
+          </div>
+
+          <div class="hero-content">
+            <div class="badge reveal">
+              🚀 Your Path to AI Career Starts Here
+            </div>
+            <h1 class="hero-title reveal reveal-delay-1">
+              Learn. Play. <br />
+              <span class="typing-text gradient-text" id="typeText"></span>
+            </h1>
+            <p class="hero-desc reveal reveal-delay-2">
+              A structured, step-by-step platform to master AI/ML. Watch videos,
+              play games to test your knowledge, and build real-world projects.
+            </p>
+            <div class="hero-actions reveal reveal-delay-3">
+              <!-- Main CTA takes user to Step 1: Learning -->
+              <button class="btn btn-rgb" onclick="router.loadPage('subjects')">
+                <span>Start Learning →</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Clear Steps Section -->
+        <div class="section alt-bg">
+          <div class="container">
+            <h2 class="section-title reveal">How It Works</h2>
+            <p class="section-desc reveal">
+              Follow this simple path to success.
+            </p>
+
+            <div class="steps-grid">
+              <div
+                class="step-item reveal"
+                onclick="router.loadPage('subjects')"
+              >
+                <div class="step-num">1</div>
+                <h4>Watch & Learn</h4>
+                <p>Curated video playlists for DSA, Python, ML & Math.</p>
+                <span class="step-link">Go to Subjects →</span>
+              </div>
+              <div class="step-arrow">→</div>
+              <div
+                class="step-item reveal reveal-delay-1"
+                onclick="router.loadPage('lab')"
+              >
+                <div class="step-num">2</div>
+                <h4>Play & Practice</h4>
+                <p>Gamified quizzes and AI simulators to test skills.</p>
+                <span class="step-link">Enter AI Lab →</span>
+              </div>
+              <div class="step-arrow">→</div>
+              <div
+                class="step-item reveal reveal-delay-2"
+                onclick="router.loadPage('recommended')"
+              >
+                <div class="step-num">3</div>
+                <h4>Explore Resources</h4>
+                <p>Top tools, channels, and cheat sheets.</p>
+                <span class="step-link">View Resources →</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="stats-section">
+          <div class="container">
+            <div class="stats-grid">
+              <div class="stat-item glass reveal">
+                <span class="stat-number" data-target="500">0</span
+                ><span class="plus">+</span>
+                <span class="stat-label">Students</span>
+              </div>
+              <div class="stat-item glass reveal reveal-delay-1">
+                <span class="stat-number" data-target="50">0</span
+                ><span class="plus">+</span>
+                <span class="stat-label">Projects</span>
+              </div>
+              <div class="stat-item glass reveal reveal-delay-2">
+                <span class="stat-number" data-target="100">0</span
+                ><span class="plus">+</span>
+                <span class="stat-label">Videos</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PAGE 2: SUBJECTS (LEARNING VIDEOS) -->
+      <section id="page-subjects" class="page">
+        <div class="section pt-32">
+          <div class="container">
+            <div class="intro-badge reveal">Step 1: Core Learning</div>
+            <h2 class="section-title reveal">Subject Playlists</h2>
+            <p class="section-desc reveal">
+              Click 'Play' to watch videos or 'Playlist' to see the full list.
+            </p>
+
+            <div class="subjects-grid">
+              <!-- DSA -->
+              <div class="card glass reveal">
+                <div class="card-icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="white"
+                    stroke-width="2"
+                  >
+                    <rect x="3" y="3" width="7" height="7" />
+                    <rect x="14" y="3" width="7" height="7" />
+                    <rect x="14" y="14" width="7" height="7" />
+                    <rect x="3" y="14" width="7" height="7" />
+                  </svg>
+                </div>
+                <h3>DSA with Python</h3>
+                <p>Master Data Structures & Algorithms.</p>
+                <div class="card-footer">
+                  <a
+                    href="https://www.youtube.com/playlist?list=PLgUwDviBIf0oF6QLZRmQb7JnT8c9Gz4L"
+                    target="_blank"
+                    class="btn-card"
+                    >📂 Playlist</a
+                  >
+                  <a
+                    href="https://www.youtube.com/watch?v=RBSGKlAvoiM"
+                    target="_blank"
+                    class="btn-card primary"
+                    >▶️ Video</a
+                  >
+                </div>
+              </div>
+              <!-- Discrete Math -->
+              <div class="card glass reveal reveal-delay-1">
+                <div class="card-icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="white"
+                    stroke-width="2"
+                  >
+                    <circle cx="12" cy="12" r="10" />
+                  </svg>
+                </div>
+                <h3>Discrete Math</h3>
+                <p>Logic, Sets, Graphs & Combinatorics.</p>
+                <div class="card-footer">
+                  <a
+                    href="https://www.youtube.com/playlist?list=PLgUwDviBIf0rcM7LoTWfn5SZf6z2nPfq"
+                    target="_blank"
+                    class="btn-card"
+                    >📂 Playlist</a
+                  >
+                  <a href="#" target="_blank" class="btn-card primary"
+                    >▶️ Video</a
+                  >
+                </div>
+              </div>
+              <!-- Statistics -->
+              <div class="card glass reveal reveal-delay-2">
+                <div class="card-icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="white"
+                    stroke-width="2"
+                  >
+                    <path d="M18 20V10M12 20V4M6 20v-6" />
+                  </svg>
+                </div>
+                <h3>Statistics</h3>
+                <p>Probability & Inference for ML.</p>
+                <div class="card-footer">
+                  <a href="#" class="btn-card">📂 Playlist</a>
+                  <a href="#" class="btn-card primary">▶️ Video</a>
+                </div>
+              </div>
+              <!-- Python -->
+              <div class="card glass reveal reveal-delay-3">
+                <div class="card-icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="white"
+                    stroke-width="2"
+                  >
+                    <path d="M16 18l6-6-6-6" />
+                    <path d="M8 6l-6 6 6 6" />
+                  </svg>
+                </div>
+                <h3>Python Programming</h3>
+                <p>Core & Advanced Python.</p>
+                <div class="card-footer">
+                  <a href="#" class="btn-card">📂 Playlist</a>
+                  <a href="#" class="btn-card primary">▶️ Video</a>
+                </div>
+              </div>
+              <!-- ML -->
+              <div class="card glass reveal">
+                <div class="card-icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="white"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"
+                    />
+                  </svg>
+                </div>
+                <h3>Machine Learning</h3>
+                <p>Algorithms & Neural Nets.</p>
+                <div class="card-footer">
+                  <a
+                    href="https://www.youtube.com/playlist?list=PLgUwDviBIf0oF6QLZRmQb7JnT8c9Gz4L"
+                    target="_blank"
+                    class="btn-card"
+                    >📂 Playlist</a
+                  >
+                  <a href="#" class="btn-card primary">▶️ Video</a>
+                </div>
+              </div>
+              <!-- Aptitude -->
+              <div class="card glass reveal reveal-delay-1">
+                <div class="card-icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="white"
+                    stroke-width="2"
+                  >
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                  </svg>
+                </div>
+                <h3>Aptitude</h3>
+                <p>Placement focused quantitative & logic.</p>
+                <div class="card-footer">
+                  <a href="#" class="btn-card">📂 Playlist</a>
+                  <a href="#" class="btn-card primary">▶️ Video</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bottom CTA -->
+            <div class="cta-box glass reveal">
+              <h3>Finished Learning?</h3>
+              <p>Test your knowledge with interactive games.</p>
+              <button class="btn btn-primary" onclick="router.loadPage('lab')">
+                Go to AI Lab →
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PAGE 3: AI LAB (GAMES) -->
+      <section id="page-lab" class="page">
+        <div class="section pt-32">
+          <div class="container">
+            <div class="intro-badge reveal">Step 2: Practice</div>
+            <h2 class="section-title reveal">AI Learning Lab</h2>
+            <p class="section-desc reveal">
+              Play games, earn XP, and level up.
+            </p>
+
+            <div class="lab-layout">
+              <div class="sidebar reveal">
+                <div class="profile-card glass">
+                  <div class="profile-header">
+                    <div class="avatar">AI</div>
+                    <div>
+                      <div class="rank-title" id="userRank">Beginner</div>
+                      <div class="xp-info">
+                        <span id="currentXP">0</span> XP
+                      </div>
+                    </div>
+                  </div>
+                  <div class="xp-bar-container">
+                    <div class="xp-bar" id="xpBar" style="width: 0%"></div>
+                  </div>
+                  <div class="xp-meta">
+                    <span>Lv. <span id="currentLevel">1</span></span>
+                    <span><span id="neededXP">100</span> XP</span>
+                  </div>
+                </div>
+
+                <div class="leaderboard glass">
+                  <h4>🏆 Leaderboard</h4>
+                  <div id="leaderboardList"></div>
+                </div>
+              </div>
+
+              <div class="game-area glass reveal">
+                <div class="game-tabs" id="gameTabs">
+                  <button class="game-tab active" onclick="games.load('quiz')">
+                    Quiz
+                  </button>
+                  <button class="game-tab" onclick="games.load('drag')">
+                    Drag & Drop
+                  </button>
+                  <button class="game-tab" onclick="games.load('sim')">
+                    Build AI
+                  </button>
+                </div>
+                <div class="game-container" id="gameContainer"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PAGE 4: RECOMMENDED -->
+      <section id="page-recommended" class="page">
+        <div class="section pt-32">
+          <div class="container">
+            <div class="intro-badge reveal">Step 3: Resources</div>
+            <h2 class="section-title reveal">Recommended</h2>
+            <p class="section-desc reveal">
+              Top external resources, channels, and tools.
+            </p>
+
+            <div class="video-grid">
+              <!-- Resource 1 -->
+              <div class="video-card glass reveal">
+                <div class="vid-thumb">
+                  <img
+                    src="https://img.youtube.com/vi/RBSGKlAvoiM/maxresdefault.jpg"
+                    alt="DSA"
+                  />
+                  <a
+                    href="https://www.youtube.com/watch?v=RBSGKlAvoiM"
+                    target="_blank"
+                    class="play-btn"
+                    >▶</a
+                  >
+                </div>
+                <div class="vid-info">
+                  <h3>DSA Mastery</h3>
+                  <p>Striver's A2Z Course (Best for Placements)</p>
+                  <span class="tag blue">Must Watch</span>
+                </div>
+              </div>
+              <!-- Resource 2 -->
+              <div class="video-card glass reveal reveal-delay-1">
+                <div class="vid-thumb">
+                  <img
+                    src="https://img.youtube.com/vi/aircAruvnKk/maxresdefault.jpg"
+                    alt="NN"
+                  />
+                  <a
+                    href="https://www.youtube.com/watch?v=aircAruvnKk"
+                    target="_blank"
+                    class="play-btn"
+                    >▶</a
+                  >
+                </div>
+                <div class="vid-info">
+                  <h3>Neural Networks</h3>
+                  <p>3Blue1Brown (Visual Intuition)</p>
+                  <span class="tag green">Concepts</span>
+                </div>
+              </div>
+              <!-- Resource 3 -->
+              <div class="video-card glass reveal reveal-delay-2">
+                <div
+                  class="vid-thumb"
+                  style="
+                    background: #1e293b;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                  "
+                >
+                  <span style="font-size: 40px">📚</span>
+                </div>
+                <div class="vid-info">
+                  <h3>Roadmap.sh</h3>
+                  <p>Community driven roadmaps & guides.</p>
+                  <a
+                    href="https://roadmap.sh"
+                    target="_blank"
+                    class="tag orange"
+                    >Website</a
+                  >
+                </div>
+              </div>
+              <!-- Resource 4 -->
+              <div class="video-card glass reveal reveal-delay-3">
+                <div
+                  class="vid-thumb"
+                  style="
+                    background: #1e293b;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                  "
+                >
+                  <span style="font-size: 40px">🛠️</span>
+                </div>
+                <div class="vid-info">
+                  <h3>Google Colab</h3>
+                  <p>Free GPU for running ML models.</p>
+                  <a
+                    href="https://colab.research.google.com"
+                    target="_blank"
+                    class="tag purple"
+                    >Tool</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PAGE 5: PROJECTS -->
+      <section id="page-projects" class="page">
+        <div class="section pt-32">
+          <div class="container">
+            <div class="intro-badge reveal">Step 4: Build</div>
+            <h2 class="section-title reveal">Projects Portfolio</h2>
+            <p class="section-desc reveal">
+              Real-world implementations to showcase skills.
+            </p>
+
+            <div class="projects-grid">
+              <div class="project-card glass reveal">
+                <div class="p-icon" style="background: #f97316">Traffic</div>
+                <div class="p-info">
+                  <h3>Traffic Management System</h3>
+                  <p>AI-based traffic optimization.</p>
+                  <span class="tag orange">Python</span>
+                  <a href="#" class="p-link">View Code →</a>
+                </div>
+              </div>
+              <div class="project-card glass reveal reveal-delay-1">
+                <div class="p-icon" style="background: #22c55e">Crop</div>
+                <div class="p-info">
+                  <h3>Crop Health Predictor</h3>
+                  <p>ML model for disease prediction.</p>
+                  <span class="tag green">ML</span>
+                  <a href="#" class="p-link">View Code →</a>
+                </div>
+              </div>
+              <div class="project-card glass reveal reveal-delay-2">
+                <div class="p-icon" style="background: #6366f1">Sales</div>
+                <div class="p-info">
+                  <h3>Sales Analytics</h3>
+                  <p>EDA & Predictive Modeling.</p>
+                  <span class="tag purple">Internship</span>
+                  <a href="#" class="p-link">View Code →</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container text-center">
+        <p>ML Prep Hub. Learn → Play → Build.</p>
+      </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
