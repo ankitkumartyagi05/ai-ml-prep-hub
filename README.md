@@ -166,7 +166,7 @@ Works on:
 🚀 Prepare for AI Placements
 
 ---
-
+<div align="center">
 # 🛠 Tech Stack
 
 | Technology           | Purpose            |
@@ -177,6 +177,7 @@ Works on:
 | 💎 Tailwind CSS      | UI framework       |
 | 💾 Local Storage API | Save user progress |
 
+</div>
 ---
 
 # 📂 Project Structure
