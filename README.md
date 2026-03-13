@@ -1,253 +1,269 @@
-# ai-ml-prep-hub
-# 🚀 ML Prep Hub
+<div align="center">
 
-### An Interactive AI/ML Placement Preparation Platform
+# 🤖✨AI ML Prep Hub
 
-ML Prep Hub is a modern **AI/ML placement preparation web platform**
-designed to help students learn concepts, practice them through games,
-and build projects in a structured roadmap.
+### 🚀 Interactive AI/ML Placement Preparation Platform
 
-Instead of just watching videos, learners follow a guided path:
+<img src="https://readme-typing-svg.herokuapp.com?font=Poppins&size=35&duration=3000&color=00F7FF&center=true&vCenter=true&width=600&lines=Learn+AI+%7C+Practice+%7C+Build+Projects;Gamified+AI%2FML+Learning;Prepare+for+AI+Placements" />
 
-**Learn → Play → Build → Get Placed**
+<br>
 
-------------------------------------------------------------------------
+![HTML](https://img.shields.io/badge/HTML5-Structure-orange?style=for-the-badge\&logo=html5)
+![CSS](https://img.shields.io/badge/CSS3-Styling-blue?style=for-the-badge\&logo=css3)
+![JavaScript](https://img.shields.io/badge/JavaScript-Logic-yellow?style=for-the-badge\&logo=javascript)
+![Tailwind](https://img.shields.io/badge/TailwindCSS-UI-cyan?style=for-the-badge\&logo=tailwindcss)
 
-# 📌 Project Overview
+</div>
 
-ML Prep Hub is a **Single Page Web Application (SPA)** that combines
-structured learning, gamified practice, and progress tracking into one
-platform.
+---
 
-Many students preparing for **AI/ML placements** struggle with scattered
-resources and passive learning. This project solves that problem by
-providing a **step‑by‑step roadmap with interactive activities**.
+# 🌟 About ML Prep Hub
 
-------------------------------------------------------------------------
+**ML Prep Hub** is an interactive web platform designed to help students prepare for **AI / Machine Learning placements** in a structured and engaging way.
+
+Instead of learning randomly from scattered resources, this platform provides a **step-by-step roadmap**:
+
+Learn ➜ Practice ➜ Build ➜ Get Placed
+
+The project combines **learning resources, gamified practice, and portfolio projects** into one platform.
+
+---
 
 # ❗ Problem Statement
 
-Students face several issues while preparing for AI/ML:
+Students preparing for AI/ML often face these problems:
 
--   Lack of structured learning resources
--   Passive learning from videos without testing knowledge
--   Low motivation due to boring study methods
--   No progress tracking
+📉 Lack of structured learning path
+📚 Scattered resources across the internet
+😴 Passive learning from videos
+❌ No progress tracking
 
-### Solution
+### ✅ Solution
 
 ML Prep Hub provides:
 
--   Structured learning resources
--   Gamified AI practice
--   Progress tracking
--   Competitive learning through XP and leaderboards
+✔ Structured roadmap
+✔ Gamified AI learning
+✔ Progress tracking
+✔ Competitive learning experience
 
-------------------------------------------------------------------------
+---
 
 # ✨ Key Features
 
 ## 📚 Learning Management
 
--   Curated playlists for:
-    -   Python
-    -   Data Structures & Algorithms
-    -   Discrete Mathematics
-    -   Machine Learning
--   Organized learning cards
--   One‑click access to YouTube playlists
+Curated playlists for important subjects:
 
-------------------------------------------------------------------------
+🐍 Python
+🧠 Machine Learning
+📊 Data Structures & Algorithms
+📐 Discrete Mathematics
 
-## 🎮 Gamified AI Lab (Main Feature)
+Features:
 
-The platform transforms learning into a **game experience**.
+* Organized learning cards
+* Direct YouTube resource links
+* Clean and simple UI
 
-### XP and Level System
+---
 
-Users earn **XP points** for correct answers and activities.
+# 🎮 Gamified AI Lab (Main Feature)
 
-Ranks progress from: - AI Beginner - AI Explorer - AI Developer - AI
-Expert - AI Pro
+The platform turns learning into a **game experience**.
 
-### Leaderboard
+## 🧠 XP & Level System
 
-A leaderboard shows the top learners (stored locally for demo purposes).
+Users earn **XP points** for completing tasks.
 
-### Games Included
+Levels include:
 
-#### 1️⃣ Quiz Battle
+🥉 AI Beginner
+🥈 AI Explorer
+🥇 AI Developer
+🏆 AI Expert
+👑 AI Pro
 
--   AI/ML MCQs
--   Instant feedback
--   Explanations for answers
+---
 
-#### 2️⃣ Drag and Drop Classification
+# 🎯 AI Learning Games
 
-Users classify items such as:
+### 🧩 Quiz Battle
 
-Example: - Neural Network → AI - Regression → Machine Learning
+* AI/ML multiple choice questions
+* Instant feedback
+* Concept explanations
 
-#### 3️⃣ Build AI Simulator
+---
 
-A **10×10 grid simulator** where users:
+### 🧠 Drag & Drop Classification
 
--   Place red and blue data points
--   Train a simple model
--   Observe classification accuracy
+Example tasks:
 
-This helps learners **visualize machine learning classification
-concepts**.
+Neural Network ➜ AI
+Regression ➜ Machine Learning
 
-------------------------------------------------------------------------
+---
 
-## 📅 Smart Study Timetable
+### 🤖 Build AI Simulator
+
+A **10 × 10 grid simulator** where users:
+
+🔵 Place blue data points
+🔴 Place red data points
+⚡ Train a simple classifier
+📈 Observe prediction accuracy
+
+This helps learners understand **machine learning classification visually**.
+
+---
+
+# 📅 Smart Study Timetable
 
 Features include:
 
--   Real‑time clock
--   Weekday and weekend study schedules
--   Task completion tracking
--   Progress saved using **Local Storage**
+⏰ Real-time clock
+📆 Weekday / Weekend schedule
+✅ Task completion tracking
 
-Even if the browser closes, the progress remains saved.
+Progress is saved using:
 
-------------------------------------------------------------------------
+Local Storage API
 
-## 🎨 Modern UI/UX Design
+Even after closing the browser, progress remains saved.
 
-The project focuses heavily on design and user experience.
+---
 
-Design features include:
+# 🎨 UI / UX Design
 
--   Glassmorphism cards
--   RGB animated buttons
--   Dark mode UI
--   Fully responsive layout
+Modern interface with:
+
+✨ Glassmorphism design
+🌙 Dark mode
+💡 RGB animated buttons
+📱 Fully responsive layout
 
 Works on:
 
--   Mobile
--   Tablet
--   Desktop
+📱 Mobile
+💻 Desktop
+📟 Tablet
 
-------------------------------------------------------------------------
+---
 
-# 🧠 Application Flow
+# 🧠 Platform Flow
 
-The platform works as a step‑by‑step learning journey:
+🏠 Landing Page
+⬇
+📚 Learn Subjects
+⬇
+🎮 Practice with Games
+⬇
+🏆 Earn XP
+⬇
+🛠 Build Projects
+⬇
+🚀 Prepare for AI Placements
 
-1.  Landing Page -- Introduction
-2.  Subjects -- Learning resources
-3.  AI Lab -- Practice through games
-4.  Recommended -- Extra resources
-5.  Projects -- Build portfolio projects
-
-------------------------------------------------------------------------
+---
 
 # 🛠 Tech Stack
 
-  Technology          Purpose
-  ------------------- -----------------------------
-  HTML5               Website structure
-  CSS3                Layout, animations, styling
-  Tailwind CSS        Fast responsive UI
-  JavaScript          Logic, games, DOM control
-  Local Storage API   Saving user progress
+| Technology           | Purpose            |
+| -------------------- | ------------------ |
+| 🌐 HTML5             | Website structure  |
+| 🎨 CSS3              | Styling & layout   |
+| ⚡ JavaScript         | Logic & games      |
+| 💎 Tailwind CSS      | UI framework       |
+| 💾 Local Storage API | Save user progress |
 
-------------------------------------------------------------------------
+---
 
-# 📂 Project File Structure
+# 📂 Project Structure
 
-The project is lightweight and simple.
+ML-PREP-HUB
 
-    ML-PREP-HUB
-    │
-    ├── index.html
-    ├── style.css
-    └── script.js
+index.html
+style.css
+script.js
 
 ### File Roles
 
-**index.html** - Structure of all sections
+**index.html**
+Contains structure of all sections.
 
-**style.css** - Custom styling - Animations - Responsive design
+**style.css**
+Handles animations, styles, and responsive design.
 
-**script.js** - SPA navigation - Game logic - XP system - Local storage
-management
+**script.js**
+Handles:
 
-------------------------------------------------------------------------
+* SPA navigation
+* Game logic
+* XP system
+* Local storage
 
-# ⚙️ How the System Works
+---
 
-### SPA Routing
+# ⚙️ How It Works
 
-JavaScript shows and hides `<section>` elements instead of reloading
-pages.
+### SPA Navigation
 
-Example:
+JavaScript switches sections without reloading the page.
 
-Home → Subjects → AI Lab
+Home → Subjects → AI Lab → Projects
 
-------------------------------------------------------------------------
+---
 
 ### State Management
 
-A global `state` object tracks:
+A global object tracks:
 
--   XP
--   Level
--   Leaderboard
--   Completed tasks
+* XP
+* Level
+* Leaderboard
+* Completed tasks
 
-This data is stored in **localStorage**.
+Stored using **localStorage**.
 
-------------------------------------------------------------------------
+---
 
 ### Dynamic Rendering
 
-Games such as quizzes are generated dynamically using JavaScript loops.
+Quizzes and games are generated dynamically using JavaScript loops.
 
-This allows easy future expansion.
-
-------------------------------------------------------------------------
-
-### Scroll Animations
-
-The platform uses the **IntersectionObserver API** to trigger animations
-when elements appear on screen.
-
-------------------------------------------------------------------------
+---
 
 # 🔮 Future Scope
 
-The project can be extended with:
+Possible upgrades:
 
--   Backend integration (Firebase / MongoDB)
--   User login and authentication
--   Online leaderboard
--   Admin panel for adding questions
--   More AI learning games
--   Dataset puzzle challenges
+☁ Firebase / MongoDB integration
+👤 User login system
+🏆 Global leaderboard
+🧑‍💻 Admin panel
+🎮 More AI learning games
 
-------------------------------------------------------------------------
+---
 
 # 🎯 Conclusion
 
 ML Prep Hub demonstrates practical skills in:
 
--   Frontend Development
--   UI/UX Design
--   JavaScript Logic
--   Educational Product Design
+💻 Frontend Development
+🎨 UI/UX Design
+⚡ JavaScript Programming
+📊 Educational Platform Design
 
-The project solves a real problem by turning **AI/ML placement
-preparation into an engaging and interactive learning experience**.
+It converts **AI/ML placement preparation into an engaging learning experience**.
 
-------------------------------------------------------------------------
+---
 
 # 👨‍💻 Author
 
 Made with ❤️ by **Ankit Kumar Tyagi**
 
-GitHub: https://github.com/ankitkumartyagi05
+🔗 GitHub
+https://github.com/ankitkumartyagi05
+
+---
