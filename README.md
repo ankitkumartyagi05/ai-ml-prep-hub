@@ -260,11 +260,20 @@ It converts **AI/ML placement preparation into an engaging learning experience**
 
 ---
 
-# 👨‍💻 Author
+## 🔗 Project Links
 
-Made with ❤️ by **Ankit Kumar Tyagi**
+<p align="center">
 
-🔗 GitHub
-https://github.com/ankitkumartyagi05
+<a href="https://ankitkumartyagi05.github.io/ai-ml-prep-hub/">
+<img src="https://img.shields.io/badge/🚀%20Live%20Demo-ML%20Prep%20Hub-blue?style=for-the-badge">
+</a>
 
----
+<a href="https://github.com/ankitkumartyagi05/ai-ml-prep-hub">
+<img src="https://img.shields.io/badge/📂%20GitHub%20Repo-View%20Source-black?style=for-the-badge&logo=github">
+</a>
+
+<a href="https://github.com/ankitkumartyagi05">
+<img src="https://img.shields.io/badge/👨‍💻%20GitHub%20Profile-Ankit%20Kumar%20Tyagi-181717?style=for-the-badge&logo=github">
+</a>
+
+</p>
